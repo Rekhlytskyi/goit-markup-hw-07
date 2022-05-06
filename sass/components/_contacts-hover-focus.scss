@@ -1,0 +1,8 @@
+.contact {
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--highlight-color);
+        opacity: 1;
+    }
+}
