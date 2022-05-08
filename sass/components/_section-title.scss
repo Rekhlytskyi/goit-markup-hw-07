@@ -1,7 +1,6 @@
 .section-title {
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+    @extend .heading;
+    @include font(36px, 700, 1.17, 00.03em);
     text-align: center;
     color: var(--main-color);
     margin-bottom: 50px;

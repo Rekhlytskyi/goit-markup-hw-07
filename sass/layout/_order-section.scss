@@ -9,7 +9,8 @@
     padding-top: 200px;
 }
 
-.order-section-title {
+.order-section__title {
+    @extend .heading;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;

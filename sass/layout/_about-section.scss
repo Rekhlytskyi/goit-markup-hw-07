@@ -1,16 +1,23 @@
+.about-section {
+    @extend .section;
+    padding-top: 0;
+}
+
+.about-section__title {
+    @extend .section-title;
+}
+
 .about-section-list {
+    @extend .list;
     display: flex;
     column-gap: 30px;
 }
 
-.about-section {
-    padding-top: 0;
-}
-.about-container {
+.about-section__item-wrapper {
     position: relative;
 }
 
-.about-text {
+.about-section__item-description {
     display: flex;
     position: absolute;
     bottom: 0;
@@ -22,10 +29,7 @@
     justify-content: center;
 
     background-color: rgba(47, 48, 58, 0.8);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include font(14px, 700, 1.14, 0.03em);
     text-transform: uppercase;
     color: var(--hero-footer-text-color);
 }

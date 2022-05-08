@@ -1,4 +1,5 @@
 .social-icons-list {
+    @extend .list;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,14 +7,14 @@
     column-gap: 10px;
 }
 
-.social-link {
+.social-icons-list__link {
+    @extend .link;
     display: flex;
     border-radius: 50%;
     width: 44px;
     height: 44px;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
@@ -22,19 +23,22 @@
     &:focus, 
     &:active {
         background-color: #188ce8;
-
-        .social-icon {
-            fill: var(--advantages-icon-background-color);
-        }
     }
 }
 
 .social-icon {
-    width: 22px;
-    height: 22px;
-    fill: var(--icon-client-social);
+    @include icon-size(22px, 22px);
     transition-property: fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
-}
 
+        .social-icons-list__link:hover & {
+            fill: var(--advantages-icon-background-color);
+        }
+        .social-icons-list__link:focus & {
+            fill: var(--advantages-icon-background-color);
+        }
+        .social-icons-list__link:active & {
+            fill: var(--advantages-icon-background-color);
+        }
+}

@@ -1,4 +1,5 @@
 .order-btn {
+    @extend .button;
     display: block;
     font-family: inherit;
     text-align: center;
@@ -19,7 +20,8 @@
     }
 }
 
-.order-btn-text {
+.order-btn__body {
     display: inline-block;
     padding: 10px 32px;
+    @include font(16px, 700, 1.87, 00.06em);
 }
