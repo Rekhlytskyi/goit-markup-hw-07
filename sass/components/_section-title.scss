@@ -1,4 +1,4 @@
-.section-title {
+.section__title {
     @extend .heading;
     @include font(36px, 700, 1.17, 00.03em);
     text-align: center;

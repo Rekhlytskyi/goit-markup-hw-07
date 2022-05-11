@@ -1,23 +1,18 @@
-.about-section {
-    @extend .section;
+.section--about {
     padding-top: 0;
 }
 
-.about-section__title {
-    @extend .section-title;
-}
-
-.about-section-list {
+.about {
     @extend .list;
     display: flex;
     column-gap: 30px;
 }
 
-.about-section__item-wrapper {
+.about__item-wrapper {
     position: relative;
 }
 
-.about-section__item-description {
+.about__description {
     display: flex;
     position: absolute;
     bottom: 0;
